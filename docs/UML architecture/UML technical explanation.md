@@ -55,3 +55,5 @@
     *Comentarios:* Controla la comunicación asociada a tutorías.
 
     *Database:* Capa de persistencia compartida por todos los módulos.
+
+#### *Estos diagramas cubren completamente los requisitos UML solicitados y reflejan fielmente la implementación técnica del sistema. Cada diagrama muestra una perspectiva diferente de la arquitectura, desde la estructura estática (clases, paquetes) hasta el comportamiento dinámico (casos de uso, secuencia) y el modelo de datos subyacente.*
