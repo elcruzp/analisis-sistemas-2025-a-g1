@@ -1,29 +1,28 @@
 ```mermaid
-graph TD
-    %% Actores
-    Estudiante([Estudiante])
-    Tutor([Tutor])
-    Coordinador([Coordinador])
+graph LR
 
-    %% Casos de uso - Estudiante
-    Estudiante --> A1[Solicitar tutoría]
-    Estudiante --> A2[Ver tutorías propias]
-    Estudiante --> A3[Cancelar tutoría]
-    Estudiante --> A4[Agregar comentario]
+    Estudiante("👤 Estudiante")
+    Tutor("👤 Tutor")
+    Coordinador("👤 Coordinador Académico")
 
-    %% Casos de uso - Tutor
-    Tutor --> B1[Aceptar/rechazar tutoría]
-    Tutor --> B2[Ver tutorías asignadas]
-    Tutor --> B3[Cambiar estado de tutoría]
-    Tutor --> B4[Agregar comentario]
+    subgraph "TUTORIA PLUS - Gestión de Tutorías"
+        S1[Solicitar tutoría]
+        S2[Visualizar tutorías agendadas]
+        S3[Cancelar tutoría]
 
-    %% Casos de uso - Coordinador
-    Coordinador --> C1[Gestionar usuarios]
-    Coordinador --> C2[Ver reportes]
-    Coordinador --> C3[Asignar tutores]
+        T1[Gestionar agenda de tutorías]
+        T2[Registrar avances de tutoría]
 
-    %% Relaciones
-    A2 --> D1[Ver tutorías]
-    B2 --> D1
+        C1[Revisar reportes]
+        C2[Hacer seguimiento académico]
+    end
 
-    A4 -.-> A1
+    Estudiante --> S1
+    Estudiante --> S2
+    Estudiante --> S3
+
+    Tutor --> T1
+    Tutor --> T2
+
+    Coordinador --> C1
+    Coordinador --> C2
