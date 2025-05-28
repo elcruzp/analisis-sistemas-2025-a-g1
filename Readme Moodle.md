@@ -37,10 +37,10 @@ feature/project/
 │   │   └── Relational Model.png
 │   │
 │   ├── DesignThinking/             # Proceso de Design Thinking
-│   │   └── Design_Thinking_Process.md
+│   │   └── Design_Thinking_Process.png
 │   │
 │   └── MoSCoW/                     # Priorización de funcionalidades
-│       └── Prioritization_MoSCoW.md
+│       └── Prioritization_MoSCoW.png
 │
 │
 ├── Readme Moodle.md                       
